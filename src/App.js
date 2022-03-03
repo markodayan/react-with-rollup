@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>{val}</h1>
+      <h1>{val} 3</h1>
       <img src={cat} width={400} height={400} />
     </div>
   );

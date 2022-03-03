@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rollup -c rollup.config.js -w"
+    "start": "cp public/index.html dist/index.html && rollup -c rollup_dev.config.js -w",
+    "build": "cp public/index.html dist/index.html && rollup -c rollup.config.js"
   },
   "keywords": [],
   "author": "",

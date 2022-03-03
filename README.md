@@ -49,7 +49,7 @@ npm i -D @babel/core @babel/preset-react
 npm i -D @rollup/plugin-image rollup-plugin-postcss
 ```
 
-5. Create a config file called `rollup.config.js` in project root and populate with the following:
+5. Create a config file called `rollup_dev.config.js` in project root and populate with the following:
 
 ```javascript
 import serve from 'rollup-plugin-serve';
@@ -98,7 +98,9 @@ export default {
 6. Create your React app in a `src` directory as you normally would and then run the application with:
 
 ```
-rollup -c rollup.config.js -w
+rollup -c rollup_dev.config.js -w
 ```
 
 7. Add this command as a start script in `package.json`.
+
+8. You can optionally create a production rollup config file that will just do the build process without serving the app or offering hot reloads, just remove the `serve` and `livereload` plugins.
